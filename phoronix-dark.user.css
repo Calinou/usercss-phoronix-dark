@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name         Dark Phoronix
+@namespace    github.com/Calinou
+@version      1.0.0
+@description  Dark theme for the Phoronix news website.
+@author       Calinou (https://github.com/Calinou)
+@license      CC0-1.0
+@homepageURL  https://github.com/Calinou/usercss-phoronix-dark
+@supportURL   https://github.com/Calinou/usercss-phoronix-dark/issues
+==/UserStyle== */
+@-moz-document domain("phoronix.com") {
+  :root {
+    --background-color-1: #22262a;
+    --background-color-2: #2f3337;
+    --background-color-3: #3f4347;
+    --border-color: #555a5f;
+    --link-color: hsla(120, 50%, 65%);
+    --text-color: hsla(0, 0%, 100%, 0.88);
+    --text-color-muted: hsla(0, 0%, 100%, 0.55);
+    --featured-background-color: hsla(30, 50%, 30%);
+  }
+
+  h2,
+  p,
+  td,
+  article,
+  #sidebar aside header,
+  .article-box header,
+  #about-author header,
+  .wide-article-box header {
+    color: var(--text-color);
+  }
+
+  article.full .author,
+  #sidebar aside,
+  #about-author p,
+  article .details,
+  article .details a {
+    color: var(--text-color-muted);
+  }
+
+  a,
+  article a,
+  #sidebar a,
+  #litemenu a {
+    color: var(--link-color);
+  }
+
+  a.icon-facebook,
+  a.icon-twitter,
+  a.icon-rss {
+    background-color: var(--background-color-3);
+    color: var(--text-color-muted);
+  }
+
+  article.important header a::before {
+    background-color: var(--featured-background-color);
+  }
+
+  #content,
+  #main,
+  #sidebar-wrap,
+  article.full img {
+    border-color: var(--border-color);
+  }
+
+  #content-bg {
+    background-color: var(--background-color-1);
+  }
+
+  #content {
+    background-color: var(--background-color-2);
+  }
+
+  #menuwrap {
+    background-color: var(--background-color-3);
+  }
+
+  #search,
+  #cse-search-box,
+  #cse-search-box input {
+    background-color: var(--background-color-2) !important;
+    color: var(--text-color);
+  }
+
+  #sharebar {
+    display: none;
+  }
+}
